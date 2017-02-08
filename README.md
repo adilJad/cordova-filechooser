@@ -19,8 +19,8 @@ The success callback get the uri of the selected file
 where data
 
 	data = {
-		size: //file size
-		name: //file name
+		size: // file size
+		name: // file name
 		file: // Base64 code
 		type: // file type i.e "application/pdf"
 	}
