@@ -4,12 +4,7 @@ Requires Cordova >= 2.8.0
 
 Install with Cordova CLI
 	
-	$ cordova plugin add http://github.com/don/cordova-filechooser.git
-
-Install with Plugman 
-
-	$ plugman --platform android --project /path/to/project \ 
-		--plugin http://github.com/don/cordova-filechooser.git
+	$ cordova plugin add https://github.com/adilJad/cordova-filechooser.git
 
 API
 
@@ -17,9 +12,18 @@ API
 
 The success callback get the uri of the selected file
 
-	fileChooser.open(function(uri) {
+	fileChooser.open(function(data) {
 		alert(uri);
 	});
+	
+where data
+
+	data = {
+		size: //file size
+		name: //file name
+		file: //Base64 code
+		type: // file type i.e "application/pdf"
+	}
 	
 Screenshot
 
